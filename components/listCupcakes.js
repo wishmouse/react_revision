@@ -9,9 +9,9 @@ class ListCupcakes extends React.Component{
     const items=this.props.items
     return(
       <ul>
-        {this.props.items.map(function(items)
+        {this.props.items.map(function(items, i)
           {
-            return <li>{items}</li>
+            return <li key={i}>{items}</li>
           }
         )}
        </ul>
